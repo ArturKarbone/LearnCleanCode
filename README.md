@@ -13,6 +13,7 @@
 ### Blogs
 
 - https://martinfowler.com/nosql.html
+- http://blog.byndyu.ru/
 
 ### Videos
 - [Aloha Ruby Conf 2012 Refactoring from Good to Great by Ben Orenstein](https://www.youtube.com/watch?v=DC-pQPq0acs&t=599sI)
@@ -36,6 +37,15 @@
 
 ### Certificates
 
+### Podcasts
+
+ - http://www.codingblocks.net/podcast/episode-47-clean-code-writing-meaningful-names/
+ - http://www.codingblocks.net/podcast/how-to-write-amazing-functions/
+ - http://www.codingblocks.net/podcast/episode-49-clean-code-comments-are-lies/
+ - http://www.codingblocks.net/podcast/episode-50-clean-code-formatting-matters/
+ - http://www.codingblocks.net/podcast/objects-vs-data-structures/
+ - http://www.codingblocks.net/podcast/episode-52-clean-code-error-handling/
+ 
 
 ### Books
 
