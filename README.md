@@ -84,7 +84,9 @@
 - [Real-World Kanban: Do Less, Accomplish More with Lean Thinking](https://www.amazon.com/Real-World-Kanban-Less-Accomplish-Thinking/dp/1680500775/ref=pd_sim_14_29?_encoding=UTF8&psc=1&refRID=FQESSMJNRV2QKEVPYX2E)
 - [The Phoenix Project: A Novel about IT, DevOps, and Helping Your Business Win](https://www.amazon.com/Phoenix-Project-DevOps-Helping-Business/dp/0988262509/ref=pd_sim_14_27?_encoding=UTF8&psc=1&refRID=FQESSMJNRV2QKEVPYX2E)
 - [More Agile Testing: Learning Journeys for the Whole Team](https://www.amazon.com/More-Agile-Testing-Addison-Wesley-Signature/dp/0321967054/ref=pd_sim_14_34?_encoding=UTF8&psc=1&refRID=FQESSMJNRV2QKEVPYX2E)
-
+- [The Art of Computer Programming](https://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/ref=sr_1_1?s=books&ie=UTF8&qid=1487190233&sr=1-1&keywords=the+art+of+programming)
+- [Graph Algoritms](https://www.amazon.com/Graph-Algorithms-Shimon-Even/dp/0521736536/ref=sr_1_1?s=books&ie=UTF8&qid=1487190302&sr=1-1&keywords=graph+theory+an+algorithms)
+- [Graph Theory. An Algorithmic Approach](https://www.amazon.com/Graph-Theory-Algorithmic-Approach-Christofides/dp/0121743500/ref=sr_1_1?s=books&ie=UTF8&qid=1487190358&sr=1-1&keywords=graph+theory+an+algorithmic+approach)
 
 ### Public Speaking
 
