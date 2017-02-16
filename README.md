@@ -18,7 +18,7 @@
 ### Videos
 - [Aloha Ruby Conf 2012 Refactoring from Good to Great by Ben Orenstein](https://www.youtube.com/watch?v=DC-pQPq0acs&t=599sI)
 - [DevTernity 2016: Kevlin Henney - Seven Ineffective Coding Habits of Many Programmers](https://www.youtube.com/watch?v=SUIUZ09mnwM)
-
+- [DevTernity 2016: Yegor Bugayenko - XDSD: Meetings-Free Software Development Methodology](https://www.youtube.com/watch?v=rwpV62G7hTE)
 ### Whitepapers
 
 
