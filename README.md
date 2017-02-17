@@ -19,6 +19,7 @@
 - [Aloha Ruby Conf 2012 Refactoring from Good to Great by Ben Orenstein](https://www.youtube.com/watch?v=DC-pQPq0acs&t=599sI)
 - [DevTernity 2016: Kevlin Henney - Seven Ineffective Coding Habits of Many Programmers](https://www.youtube.com/watch?v=SUIUZ09mnwM)
 - [DevTernity 2016: Yegor Bugayenko - XDSD: Meetings-Free Software Development Methodology](https://www.youtube.com/watch?v=rwpV62G7hTE)
+
 ### Whitepapers
 
 
@@ -88,6 +89,8 @@
 - [The Art of Computer Programming](https://www.amazon.com/Computer-Programming-Volumes-1-4A-Boxed/dp/0321751043/ref=sr_1_1?s=books&ie=UTF8&qid=1487190233&sr=1-1&keywords=the+art+of+programming)
 - [Graph Algoritms](https://www.amazon.com/Graph-Algorithms-Shimon-Even/dp/0521736536/ref=sr_1_1?s=books&ie=UTF8&qid=1487190302&sr=1-1&keywords=graph+theory+an+algorithms)
 - [Graph Theory. An Algorithmic Approach](https://www.amazon.com/Graph-Theory-Algorithmic-Approach-Christofides/dp/0121743500/ref=sr_1_1?s=books&ie=UTF8&qid=1487190358&sr=1-1&keywords=graph+theory+an+algorithmic+approach)
+- [Real World Haskell](http://book.realworldhaskell.org/)
+- [Вечно уставший](http://www.mann-ivanov-ferber.ru/books/vechno-ustavshij/)
 
 ### Public Speaking
 
