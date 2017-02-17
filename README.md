@@ -91,6 +91,7 @@
 - [Graph Theory. An Algorithmic Approach](https://www.amazon.com/Graph-Theory-Algorithmic-Approach-Christofides/dp/0121743500/ref=sr_1_1?s=books&ie=UTF8&qid=1487190358&sr=1-1&keywords=graph+theory+an+algorithmic+approach)
 - [Real World Haskell](http://book.realworldhaskell.org/)
 - [Вечно уставший](http://www.mann-ivanov-ferber.ru/books/vechno-ustavshij/)
+- [Scrum - Революционный метод управления проектами](http://www.mann-ivanov-ferber.ru/books/scrum/)
 
 ### Public Speaking
 
