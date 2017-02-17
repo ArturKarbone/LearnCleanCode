@@ -92,6 +92,9 @@
 - [Real World Haskell](http://book.realworldhaskell.org/)
 - [Вечно уставший](http://www.mann-ivanov-ferber.ru/books/vechno-ustavshij/)
 - [Scrum - Революционный метод управления проектами](http://www.mann-ivanov-ferber.ru/books/scrum/)
+- [Elegant Objects](http://www.yegor256.com/elegant-objects.html)
+- [Talking with Tech Leads](https://leanpub.com/talking-with-tech-leads)
+- [Your Code as a Crime Scene](https://pragprog.com/book/atcrime/your-code-as-a-crime-scene)
 
 ### Public Speaking
 
