@@ -28,3 +28,18 @@ After (Temp to query + fluent interfaces)
             return this;
         }
 ```
+
+Even more readable version where each level of abstraction has it's own indentation
+```
+     public IntegrationContext ShouldHaveInvoices(int numberOfInvoices)
+        {
+            Resolver
+               .ContractsRepository
+                    .Get(this.Contract.Id)
+                       .Invoices
+                       .Count()
+                       .ShouldBe(numberOfInvoices);
+
+            return this;
+        }
+```
