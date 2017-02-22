@@ -1,1 +1,2 @@
 - Avoid Arrange/Act/Assert comments. Just separate these sections with a blank line
+- Constantly search for hidden abstractions
