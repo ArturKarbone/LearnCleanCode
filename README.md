@@ -22,6 +22,7 @@
 
 ### Whitepapers
 
+- [Software Engineering at Google](https://arxiv.org/abs/1702.01715)
 
 ### Use Cases
 
