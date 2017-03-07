@@ -51,7 +51,7 @@
  
 
 ### Books
-
+- [Implementation Patterns](https://www.amazon.com/Implementation-Patterns-Kent-Beck/dp/0321413091)
 - [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?ie=UTF8&qid=1487188245&sr=8-1&keywords=clean+code)
 - [The Clean Coder](https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073/ref=pd_sim_14_1?_encoding=UTF8&psc=1&refRID=KA0AA3GQQ1QD5RRHFP8P)
 - [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164/ref=pd_sim_14_3?_encoding=UTF8&psc=1&refRID=MPSG5N8ZQ078BG7PH0H8)
