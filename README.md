@@ -33,6 +33,9 @@
 
 ### Courses
 
+#### Sandi Metz
+
+- https://www.sandimetz.com/products/
 
 #### WintellectNow
 
