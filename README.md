@@ -56,6 +56,7 @@
  
 
 ### Books
+- [Design It](https://pragprog.com/book/mkdsa/design-it)
 - [Implementation Patterns](https://www.amazon.com/Implementation-Patterns-Kent-Beck/dp/0321413091)
 - [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?ie=UTF8&qid=1487188245&sr=8-1&keywords=clean+code)
 - [The Clean Coder](https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073/ref=pd_sim_14_1?_encoding=UTF8&psc=1&refRID=KA0AA3GQQ1QD5RRHFP8P)
