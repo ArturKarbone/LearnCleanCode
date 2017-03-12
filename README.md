@@ -54,6 +54,9 @@
  - http://www.codingblocks.net/podcast/objects-vs-data-structures/
  - http://www.codingblocks.net/podcast/episode-52-clean-code-error-handling/
  
+### XDSD
+ - http://www.xdsd.org/
+ - http://www.yegor256.com/tag/xdsd.html
 
 ### Books
 - [Design It](https://pragprog.com/book/mkdsa/design-it)
