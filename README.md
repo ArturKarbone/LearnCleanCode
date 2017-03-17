@@ -59,6 +59,8 @@
  - http://www.yegor256.com/tag/xdsd.html
 
 ### Books
+- [Exercises for Programmers](https://pragprog.com/book/bhwb/exercises-for-programmers)
+- [A Common-Sense Guide to Data Structures and Algorithms](https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms)
 - [Design It](https://pragprog.com/book/mkdsa/design-it)
 - [Implementation Patterns](https://www.amazon.com/Implementation-Patterns-Kent-Beck/dp/0321413091)
 - [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?ie=UTF8&qid=1487188245&sr=8-1&keywords=clean+code)
