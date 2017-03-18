@@ -59,8 +59,13 @@
  - http://www.yegor256.com/tag/xdsd.html
 
 ### Books
+- [Coders at Work](https://www.amazon.com/Coders-Work-Reflections-Craft-Programming/dp/1430219483/ref=pd_sim_14_2?_encoding=UTF8&pd_rd_i=1430219483&pd_rd_r=FNQMS66G0XVJR1JWQSTB&pd_rd_w=za36r&pd_rd_wg=qWkYu&psc=1&refRID=FNQMS66G0XVJR1JWQSTB)
+- [Zero Bugs and Program Faster](https://www.amazon.com/Zero-Bugs-Program-Faster-Thompson/dp/0996193308/ref=pd_lutyp_cxhsh_1_4?_encoding=UTF8&pd_rd_i=0996193308&pd_rd_r=1QXEF3NG1GS7BVXMRAA0&pd_rd_w=4AEam&pd_rd_wg=Lx6Qm&psc=1&refRID=1QXEF3NG1GS7BVXMRAA0)
 - [Exercises for Programmers](https://pragprog.com/book/bhwb/exercises-for-programmers)
 - [A Common-Sense Guide to Data Structures and Algorithms](https://pragprog.com/book/jwdsal/a-common-sense-guide-to-data-structures-and-algorithms)
+- []()
+- [The Senior Software Engineer: 11 Practices of an Effective Technical Leader](https://www.amazon.com/Senior-Software-Engineer-Practices-Effective/dp/0990702804/ref=pd_sim_14_1?_encoding=UTF8&pd_rd_i=0990702804&pd_rd_r=NEYKWM4TN2J86PGDAXD5&pd_rd_w=WE5t1&pd_rd_wg=L6DsA&psc=1&refRID=NEYKWM4TN2J86PGDAXD5)
+- [Programming Pearls (2nd Edition)](https://www.amazon.com/Programming-Pearls-2nd-Jon-Bentley/dp/0201657880/ref=pd_sim_14_4?_encoding=UTF8&pd_rd_i=0201657880&pd_rd_r=G56RVM0SBSVF2SWW50ND&pd_rd_w=gnQUG&pd_rd_wg=TjfQk&psc=1&refRID=G56RVM0SBSVF2SWW50ND)
 - [Design It](https://pragprog.com/book/mkdsa/design-it)
 - [Implementation Patterns](https://www.amazon.com/Implementation-Patterns-Kent-Beck/dp/0321413091)
 - [Clean Code](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=sr_1_1?ie=UTF8&qid=1487188245&sr=8-1&keywords=clean+code)
