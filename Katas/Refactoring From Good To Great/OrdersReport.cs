@@ -12,17 +12,23 @@ namespace Orders
         public bool PlacedBetween(DateTime from, DateTime to) => PlacedAt >= from && PlacedAt <= to;
     }
 
+    class DateRange
+    {
+        public DateTime From { get; set; }
+        public DateTime To { get; set; }
+        public bool Includes(DateTime date) => date >= From && date <= To;
+
+    }
     class OrdersReport
     {
         private IEnumerable<Order> @orders;
-        private DateTime @startDate;
-        private DateTime @endDate;
-        public OrdersReport(IEnumerable<Order> orders, DateTime startDate, DateTime endDate)
+        private DateRange @dateRange;
+
+        public OrdersReport(IEnumerable<Order> orders, DateRange dateRange)
         {
             //???  @orders = orders;
             this.@orders = orders;
-            this.@startDate = startDate;
-            this.@endDate = endDate;
+            this.@dateRange = dateRange;           
         }
 
         public decimal TotalSalesWithinDateRange()
@@ -33,7 +39,7 @@ namespace Orders
 
         private IEnumerable<Order> OrdersWithinRange()
         {
-            return @orders.Where(x => x.PlacedBetween(@startDate, @endDate));
+            return @orders.Where(x => x.PlacedBetween(dateRange.From, dateRange.To));
         }
     }
 }

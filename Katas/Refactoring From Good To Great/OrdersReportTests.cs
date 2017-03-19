@@ -26,7 +26,12 @@ namespace Refactoring_From_Good_To_Great
                 }
             };
 
-            new OrdersReport(orders, new DateTime(2017, 1, 1), new DateTime(2017, 12, 31))
+            new OrdersReport(
+                    orders, 
+                    new DateRange { 
+                        From = new DateTime(2017, 1, 1),
+                        To = new DateTime(2017, 12, 31)
+                    })
                     .TotalSalesWithinDateRange()
                     .ShouldBe(50);
 
