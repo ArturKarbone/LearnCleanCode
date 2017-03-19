@@ -9,7 +9,7 @@ namespace Orders
         public DateTime PlacedAt { get; set; }
         public decimal Amount { get; set; }
 
-        public bool PlacedBetween(DateTime from, DateTime to) => PlacedAt >= from && PlacedAt <= to;
+        public bool PlacedBetween(DateRange dateRange) => PlacedAt >= dateRange.From && PlacedAt <= dateRange.To;
     }
 
     class DateRange
@@ -39,7 +39,7 @@ namespace Orders
 
         private IEnumerable<Order> OrdersWithinRange()
         {
-            return @orders.Where(x => x.PlacedBetween(dateRange.From, dateRange.To));
+            return @orders.Where(x => x.PlacedBetween(dateRange));
         }
     }
 }
