@@ -10,7 +10,8 @@ namespace Orders
         public decimal Amount { get; set; }
     }
 
-    class OrdersReport{
+    class OrdersReport
+    {
         private IEnumerable<Order> @orders;
         private DateTime @startDate;
         private DateTime @endDate;
@@ -22,10 +23,15 @@ namespace Orders
             this.@endDate = endDate;
         }
 
-        public decimal TotalSalesWithinDateRange(){
-            var ordersWithinRange = @orders.Where(x=>x.PlacedAt >= @startDate && x.PlacedAt <= @endDate);
+        public decimal TotalSalesWithinDateRange()
+        {
+            return OrdersWithinRange()
+                .Sum(x => x.Amount);
+        }
 
-            return ordersWithinRange.Sum(x=>x.Amount);
+        private IEnumerable<Order> OrdersWithinRange()
+        {
+            return @orders.Where(x => x.PlacedAt >= @startDate && x.PlacedAt <= @endDate);
         }
     }
 }
