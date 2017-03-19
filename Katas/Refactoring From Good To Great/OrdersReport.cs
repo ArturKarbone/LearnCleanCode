@@ -9,7 +9,7 @@ namespace Orders
         public DateTime PlacedAt { get; set; }
         public decimal Amount { get; set; }
 
-        public bool PlacedBetween(DateRange dateRange) => PlacedAt >= dateRange.From && PlacedAt <= dateRange.To;
+        public bool PlacedBetween(DateRange dateRange) => dateRange.Includes(PlacedAt);
     }
 
     class DateRange
