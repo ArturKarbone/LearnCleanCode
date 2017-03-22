@@ -43,3 +43,30 @@ Even more readable version where each level of abstraction has it's own indentat
             return this;
         }
 ```
+
+User method overloads/request messages insted of GetByExtranId(...), GetBySomthingElse(...)
+
+```
+    public class ExternalTenantRequest
+    {
+        public string ClientCode { get; set; }
+    }
+
+    public interface ITenantsRepository : IRepository<Tenant, string>
+    {
+        Tenant Get(ExternalTenantRequest request);
+    }
+
+    public class TenantsRepository : ITenantsRepository
+    {    
+
+        public Tenant Get(ExternalTenantRequest request)
+        {
+            var tenant = Context
+                .Tenants
+                .FirstOrDefault(x => x.ExternalId == request.ClientCode);
+
+            return tenant;
+        }
+    }
+```
