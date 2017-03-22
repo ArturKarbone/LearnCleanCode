@@ -44,7 +44,7 @@ Even more readable version where each level of abstraction has it's own indentat
         }
 ```
 
-User method overloads/request messages insted of GetByExtranId(...), GetBySomthingElse(...)
+User method overloads/request messages insted of GetByExtranId(...), GetBySomthingElse(...). In general it is a good idea to wrap ids with entities, like Client/Tenant/Order to better communicate the intent, instead of passing client_id/order_id/tenant_id/
 
 ```
     public class ExternalTenantRequest
