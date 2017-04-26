@@ -70,3 +70,31 @@ User method overloads/request messages insted of GetByExtranId(...), GetBySomthi
         }
     }
 ```
+
+Leverage dynamic, to reduce internal/nested classes
+
+```
+ class FileFixture
+    {
+        public string BaseResourcePath = "Portal.API.Tests.Shared.Fixtures";
+
+        dynamic Settings { get; }
+
+        public FileFixture(dynamic settings)
+        {
+            Settings = settings;
+        }
+
+        public byte[] Content()
+        {
+            using (System.IO.Stream stream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream($"{BaseResourcePath}.{Settings.Resource}.{Settings.File}"))
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    stream.CopyTo(ms);
+                    return ms.ToArray();
+                }
+            }
+        }
+    }
+```
