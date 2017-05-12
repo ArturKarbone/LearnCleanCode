@@ -59,6 +59,7 @@
  - http://www.yegor256.com/tag/xdsd.html
 
 ### Books
+- [Literate Programming](http://www.literateprogramming.com/index.html)
 - [Functional Web Development with Elixir, OTP, and Phoenix](https://pragprog.com/book/lhelph/functional-web-development-with-elixir-otp-and-phoenix)
 - [Coders at Work](https://www.amazon.com/Coders-Work-Reflections-Craft-Programming/dp/1430219483/ref=pd_sim_14_2?_encoding=UTF8&pd_rd_i=1430219483&pd_rd_r=FNQMS66G0XVJR1JWQSTB&pd_rd_w=za36r&pd_rd_wg=qWkYu&psc=1&refRID=FNQMS66G0XVJR1JWQSTB)
 - [Zero Bugs and Program Faster](https://www.amazon.com/Zero-Bugs-Program-Faster-Thompson/dp/0996193308/ref=pd_lutyp_cxhsh_1_4?_encoding=UTF8&pd_rd_i=0996193308&pd_rd_r=1QXEF3NG1GS7BVXMRAA0&pd_rd_w=4AEam&pd_rd_wg=Lx6Qm&psc=1&refRID=1QXEF3NG1GS7BVXMRAA0)
