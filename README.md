@@ -59,6 +59,7 @@
  - http://www.yegor256.com/tag/xdsd.html
 
 ### Books
+- [Head First: Software Development](https://www.amazon.com/Head-First-Software-Development-Companion/dp/0596527357/ref=sr_1_13?ie=UTF8&qid=1494645738&sr=8-13&keywords=implementation+patterns)
 - [Literate Programming](http://www.literateprogramming.com/index.html)
 - [Functional Web Development with Elixir, OTP, and Phoenix](https://pragprog.com/book/lhelph/functional-web-development-with-elixir-otp-and-phoenix)
 - [Coders at Work](https://www.amazon.com/Coders-Work-Reflections-Craft-Programming/dp/1430219483/ref=pd_sim_14_2?_encoding=UTF8&pd_rd_i=1430219483&pd_rd_r=FNQMS66G0XVJR1JWQSTB&pd_rd_w=za36r&pd_rd_wg=qWkYu&psc=1&refRID=FNQMS66G0XVJR1JWQSTB)
