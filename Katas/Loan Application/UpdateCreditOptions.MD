@@ -1,6 +1,7 @@
- 
+
+- Before
 ```cs
- //public void UpdateCreditOption(UpdateCreditOptionCommand command)
+
         public void UpdateCreditOption(int userId, int applicationId, int creditOptionId, CreditOptionDTOPost creditOptionDto)
         {
 
@@ -90,7 +91,7 @@
     }
 ```
 
-- Introduce Param Object
+- 1 Step. Introduce Param Object:
 
 ```cs
  public class UpdateCreditOptionCommand
@@ -102,7 +103,7 @@
     }
 ```
 
-- Apply clean code principles and read as a book
+- 2. Step. Apply clean code principles and read as a book:
 
 ```cs
  public void UpdateCreditOption(UpdateCreditOptionCommand command)
