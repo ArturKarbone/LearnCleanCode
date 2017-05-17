@@ -13,17 +13,11 @@
                 || application.Status == ApplicationStatus.PendingAmendment
                 || application.Status == ApplicationStatus.Submitted)
             {
-                var credit = this.Reposiotry.GetCredit(application.CreditId);
-                //if (credit == null)
-                //{
-                //    _logger.Error($"Can't find credit: {application.CreditId} for application: {applicationId}.");
-                //    return null;
-                //}
+                var credit = this.Reposiotry.GetCredit(application.CreditId);             
 
                 if (credit.ApprovedOptionId == command.CreditOptionId && this.Reposiotry.ApplicationHasContract(command.ApplicationId))
                 {
-                    //_logger.Error($"Can't update approved credit option: {creditOptionId} for application: {applicationId} when application has contract");
-                    //return null;
+                   throw new Exception($"Can't update approved credit option: {creditOptionId} for application: {applicationId} when application has contract");                  
                 }
 
                 var existingCreditOption = this.Reposiotry.GetCreditOption(command.CreditOptionId);
