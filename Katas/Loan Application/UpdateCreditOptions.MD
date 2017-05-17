@@ -125,6 +125,11 @@
             }
         }
 
+```
+
+Some private helper for the method above
+
+```cs
         #region Update Credit Option helpers
 
         private CreditOption ObtainExistingCreditOption(UpdateCreditOptionCommand command)
