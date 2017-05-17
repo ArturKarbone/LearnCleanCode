@@ -1,5 +1,5 @@
  
-```
+```cs
  //public void UpdateCreditOption(UpdateCreditOptionCommand command)
         public void UpdateCreditOption(int userId, int applicationId, int creditOptionId, CreditOptionDTOPost creditOptionDto)
         {
@@ -89,3 +89,18 @@
         }
     }
 ```
+
+- Introduce Param Object
+
+```cs
+ public class UpdateCreditOptionCommand
+    {
+        public IUserInfo UpdatedBy { get; set; }
+        public CreditOptionDTOPost CreditOption { get; set; }
+        public int ApplicationId { get; set; }
+        public int CreditOptionId { get; set; }
+    }
+```
+
+
+
