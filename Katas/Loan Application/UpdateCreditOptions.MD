@@ -102,7 +102,7 @@
     }
 ```
 
-- Apply clean code principles
+- Apply clean code principles and read as a book
 
 ```cs
  public void UpdateCreditOption(UpdateCreditOptionCommand command)
@@ -120,7 +120,7 @@
 
                     credit.UnApprove(existingCreditOption);
 
-                    this.Reposiotry.Save();
+                    Persist();
                 }
             }
         }
