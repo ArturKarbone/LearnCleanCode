@@ -1,7 +1,7 @@
 
 Before
 
-```
+```cs
      public IntegrationContext ShouldHaveInvoices(int numberOfInvoicesdd
         {
             var contractsRepository = Container.Resolve<IContractsRepository>();
