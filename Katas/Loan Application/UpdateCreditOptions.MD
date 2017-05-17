@@ -102,5 +102,88 @@
     }
 ```
 
+- Apply clean code principles
+
+```cs
+ public void UpdateCreditOption(UpdateCreditOptionCommand command)
+        {
+            if (Application.CanUpdateCreditOption)
+            {
+                var credit = ObtainCredit();
+                var existingCreditOption = ObtainExistingCreditOption(command);
+
+                if (HasNoApprovedContract(command, credit))
+                {
+                    existingCreditOption.MarkAsObsolete();
+
+                    credit.AddNewOption(BuildNewOption(command, existingCreditOption));
+
+                    credit.UnApprove(existingCreditOption);
+
+                    this.Reposiotry.Save();
+                }
+            }
+        }
+
+        #region Update Credit Option helpers
+
+        private CreditOption ObtainExistingCreditOption(UpdateCreditOptionCommand command)
+        {
+            return this.Reposiotry.GetCreditOption(command.CreditOptionId);
+        }
+
+        private Credit ObtainCredit()
+        {
+            return this.Reposiotry.GetCredit(Application.CreditId);
+        }
+
+        private double ObtainRate(CreditOption newCreditOption)
+        {
+            var rates = _platformInfo.InsuranceRates;
+            double currentRate = rates[0]; //rate_1_60
+            if (newCreditOption.Duration > 60)
+            {
+                if (newCreditOption.Duration < 85)
+                {
+                    currentRate = rates[1]; //rate_61_84
+                }
+                else if (newCreditOption.Duration >= 85 && newCreditOption.Duration <= 120)
+                {
+                    currentRate = rates[2]; //rate_85_120
+                }
+            }
+
+            return currentRate;
+        }
+
+        private CreditOption BuildNewOption(UpdateCreditOptionCommand command, CreditOption existingCreditOption)
+        {
+            var newCreditOption = new CreditOption();
+            this._creditMapper.Map(command.CreditOption, newCreditOption);
+
+            newCreditOption.UserId = command.UpdatedBy.UserId;
+            newCreditOption.ParentCreditOptionId = existingCreditOption.ParentCreditOptionId ?? existingCreditOption.Id;
+            newCreditOption.CreatedDateTime = existingCreditOption.CreatedDateTime;
+            newCreditOption.ModifiedDateTime = DateTime.UtcNow;
+            newCreditOption.ModifiedCreditOptionId = existingCreditOption.Id;
+            newCreditOption.Type = existingCreditOption.Type;
+
+            newCreditOption.InsuranceRate = ObtainRate(newCreditOption);
+
+            newCreditOption.MonthlyPayment = CreditCalculations.MonthlyPayment(newCreditOption.EffectiveInterestRate, newCreditOption.Amount, newCreditOption.Duration);
+            newCreditOption.MonthlyInsurancePayment = CreditCalculations.MonthlyInsurancePayment(newCreditOption.EffectiveInterestRate, newCreditOption.Amount, newCreditOption.Duration, newCreditOption.InsuranceRate.Value);
+
+
+            return newCreditOption;
+        }
+
+        private bool HasNoApprovedContract(UpdateCreditOptionCommand command, Credit credit)
+        {
+            return !(credit.ApprovedOptionId == command.CreditOptionId && Application.HasContracts);
+        }
+        
+        #endregion
+```
+
 
 
