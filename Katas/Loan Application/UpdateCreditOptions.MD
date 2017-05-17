@@ -1,5 +1,5 @@
 
-- Before
+- Before:
 ```cs
 
         public void UpdateCreditOption(int userId, int applicationId, int creditOptionId, CreditOptionDTOPost creditOptionDto)
@@ -91,7 +91,7 @@
     }
 ```
 
-- 1 Step. Introduce Param Object:
+- 1. Step. Introduce Param Object:
 
 ```cs
  public class UpdateCreditOptionCommand
