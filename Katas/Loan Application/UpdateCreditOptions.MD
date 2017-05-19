@@ -185,5 +185,79 @@ Some private helper for the method above
         #endregion
 ```
 
+- 3. Step. HasNoApprovedContract looks like a helper. Let's move the logic to the Applicaton class:
 
+```cs
+
+public class Application
+    {
+        ...
+
+        public bool CanUpdateCreditOption => Status.OneOf(ApplicationStatus.ApprovalInProgress, ApplicationStatus.Preparation, ApplicationStatus.PendingAmendment, ApplicationStatus.Submitted);
+
+        public bool HasNoApprovedContract(int creditOptionId)
+        {
+            return !(this.Credit.ApprovedOptionId == creditOptionId && HasContracts);
+        }
+    }
+```
+
+```cs
+ public void UpdateCreditOption(UpdateCreditOptionCommand command)
+        {
+            if (Application.CanUpdateCreditOption)
+            {
+                var credit = ObtainCredit();
+                var existingCreditOption = ObtainExistingCreditOption(command);
+
+                if (this.Application.HasNoApprovedContract(command.CreditOptionId))
+                {
+                    existingCreditOption.MarkAsObsolete();
+
+                    credit.AddNewOption(BuildNewOption(command, existingCreditOption));
+
+                    credit.UnApprove(existingCreditOption);
+
+                    this.Persist();
+                }
+            }
+        }
+```
+
+Credit options is responsible for rate calculation now
+
+```cs
+
+  public class CreditOption
+    {
+        public int Id { get; set; }
+        
+        ...
+        public void MarkAsObsolete()
+        {
+            this.Obsolete = true;
+            this.ObsoleteDateTime = DateTime.UtcNow;
+        }
+
+        public void ApplyInsuranceRate(double[] availableRates)
+        {
+            var rate = availableRates[0];
+
+            if (this.Duration > 60)
+            {
+                if (this.Duration < 85)
+                {
+                    rate = availableRates[1]; //rate_61_84
+                }
+                else if (this.Duration >= 85 && this.Duration <= 120)
+                {
+                    rate = availableRates[2]; //rate_85_120
+                }
+            }
+
+
+            this.InsuranceRate = rate;
+        }
+    }
+```
 
