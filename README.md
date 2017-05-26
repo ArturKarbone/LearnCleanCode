@@ -55,12 +55,14 @@
  - http://www.codingblocks.net/podcast/episode-50-clean-code-formatting-matters/
  - http://www.codingblocks.net/podcast/objects-vs-data-structures/
  - http://www.codingblocks.net/podcast/episode-52-clean-code-error-handling/
+ - [Beyound Legacy Code](http://dotnetrocks.com/?show=1426)
  
 ### XDSD
  - http://www.xdsd.org/
  - http://www.yegor256.com/tag/xdsd.html
 
 ### Books
+- [Beyound Legacy Code](https://pragprog.com/book/dblegacy/beyond-legacy-code)
 - [Agile Software Development with C# Scrum, extreme programming, and Kanban](https://www.amazon.com/Software-Development-extreme-programming-Kanban/dp/1540671321/ref=sr_1_1?ie=UTF8&qid=1494646413&sr=8-1&keywords=extreme+programming+c%23)
 - [Extreme Programming Adventures in C#](https://www.amazon.com/Extreme-Programming-Adventures-Developer-Reference/dp/0735619492/ref=sr_1_2?ie=UTF8&qid=1494646413&sr=8-2&keywords=extreme+programming+c%23)
 - [Head First: Software Development](https://www.amazon.com/Head-First-Software-Development-Companion/dp/0596527357/ref=sr_1_13?ie=UTF8&qid=1494645738&sr=8-13&keywords=implementation+patterns)
