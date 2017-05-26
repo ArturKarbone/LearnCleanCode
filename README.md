@@ -33,6 +33,8 @@
 
 ### Courses
 
+- [10 Steps To Learn Anything Quickly](https://simpleprogrammer.com/products/learn-anything/)
+
 #### Sandi Metz
 
 - https://www.sandimetz.com/products/
