@@ -98,3 +98,51 @@ Leverage dynamic, to reduce internal/nested classes
         }
     }
 ```
+
+How to ignore tests
+```
+ [Fact(Skip="Not used in tests suite. Needed on hoc.")]       
+        public void EmulateTransactionFromSLS()
+        {
+            string clientCode = "4005", invoiceNumber = "bc26dc57-fe7e-4a11-9f2e-b627219a3daa";
+            decimal amount = 1000;
+
+            var exchangeOptions = new MessagingOptions
+            {
+                IntegrationWithSLS = new MessagingOptions.IntegrationOptions
+                {
+                    ConnectionString = "rabbitmq://sls:sls@localhost:5672/SLS_CB_Integration",
+                    TransactionsExchange = new MessagingOptions.ExchangeOptions
+                    {
+                        DefaultQueueName = "ARM_Transactions",
+                        ExchangeName = "ARM_Transactions"
+                    }
+                }
+            };
+
+            var transaction = new TransactionOccuredEvent
+            {
+                EntryDate = DateTime.Now,
+                LedgerCode = "400501",
+                InvoiceNumber = invoiceNumber,
+                TransactionTypeId = 10,
+                ClientCode = clientCode,
+                TransactionEntries = new List<TransactionEntry>
+                {
+                     new TransactionEntry
+                     {
+                          CurrencyId = "EUR",
+                          PaymentId =  123,
+                          CustomerNumber = Guid.NewGuid().ToARMIdentity(),
+                          CreditAccountId = "AR",
+                          DebitAccountId = "SALES",
+                          Amount = amount,
+                          BookingDate = DateTime.Now
+                     }
+                 }
+            };
+
+            BusConfigurator.ConfigureBus(exchangeOptions.IntegrationWithSLS)
+                .Publish(transaction);          
+        }       
+```
