@@ -34,6 +34,7 @@
 ### Courses
 
 - [10 Steps To Learn Anything Quickly](https://simpleprogrammer.com/products/learn-anything/)
+- [Refactorig Rails](http://refactoringrails.io/)
 
 #### Sandi Metz
 
